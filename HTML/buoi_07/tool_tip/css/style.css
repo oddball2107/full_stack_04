@@ -1,0 +1,38 @@
+/******************************************
+*  Author : Tran Tien Huy
+*  Created On : Wed Mar 04 2020
+*  File : style.css
+*******************************************/
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltiptext {
+    display: none;
+    position: absolute;
+    background: black;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 0px;
+    border-radius: 6px;
+    left: 110%;
+    top: -1px;
+    width: 120px;
+}
+.tooltip:hover .tooltiptext{
+    display: block;
+}
+
+.tooltip:hover .tooltiptext::before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+    right: 95%;
+    top: 2px;
+}

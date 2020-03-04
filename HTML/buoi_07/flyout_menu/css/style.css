@@ -1,0 +1,91 @@
+/******************************************
+*  Author : Tran Tien Huy
+*  Created On : Wed Mar 04 2020
+*  File : style.css
+*******************************************/
+/* SPECIFY FONT FACE */
+@font-face {
+    font-family: Google_Roboto;
+    src: url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+    font-weight: 400;
+    font-size: 16px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p, a {
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(245, 236, 236, 0.884);
+    color: black;
+    padding: 0px 30px 0px 20px;
+}
+a {
+    text-decoration: none;
+}
+#menu {
+    width: 20%;
+    font-family: Google_Roboto, Arial, Helvetica, sans-serif;
+}
+#menu li {
+    list-style: none;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+#menu li:last-child {
+    padding-bottom: 0px;
+}
+#menu li a {
+    display:block;
+    border-width: 1px;
+    border-style: solid;
+    border-top-color: transparent;
+    border-left-color: rgba(24, 158, 255, 0.95);
+    border-right-color: rgba(24, 158, 255, 0.95);
+    border-bottom-color: rgba(24, 158, 255, 0.95);
+}
+
+#menu li:last-child a {
+    border-bottom: none;
+}
+
+#menu > li > a {
+    border-right: 1px solid transparent;
+}
+#menu > li ul {
+    display:none;
+    width: 100%;
+}
+
+#menu li:hover > a {
+    background-color: rgba(24, 158, 255, 0.95);
+    border: 1px solid rgba(24, 158, 255, 0.95);
+    position: relative;
+}
+
+#menu li:hover > a::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    left: 101%;
+    top: 0px;
+    border-width: 12px 15px;
+    border-style: solid;
+    border-top-color: transparent;
+    border-bottom-color:transparent;
+    border-left-color:rgba(24, 158, 255, 0.95);
+    border-right-color: transparent;
+    z-index:1;
+}
+
+#menu  li:hover > ul {
+    display:block;
+    position: absolute;
+    left: 103%;
+    top:0;
+}
