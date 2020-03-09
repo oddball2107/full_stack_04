@@ -1,0 +1,79 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* GENERAL SETTINGS */
+div#first-switch{
+    display: inline-block;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+}
+/* HIDE THE INPUT CHECKBOX */
+.ckbox {
+    display:none;
+}
+label.check-box-label > span:hover {
+    cursor: pointer;
+}
+
+#first-switch label.check-box-label > span{
+    display:inline-block;
+    width: 80px;
+    height: 40px;
+    border-radius: 30px;
+    position: relative;
+}
+
+/* DESIGN THE FIRST CIRCULAR NODE */
+#first-switch label.check-box-label > span {
+    background-color:#ddd;
+}
+label.check-box-label > span#first_node > span {
+    display: inline-block;
+    height: 36px;
+    width: 36px;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    /* left: 2px; */
+    right: calc(100% - 36px - 2px);
+    top: 2px;
+    border-radius: 70%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+    transition: right 500ms ease, background-color 500ms ease;
+}
+
+/* CLICK THE SPAN AND CHECKED THE INPUT */
+label.check-box-label #ckbox_1:checked + span > span {
+    /* left:auto; */
+    right: 2px;
+}
+/* CHANGE BACKGROUND OF TOOGLE SWITCH WHEN CLICK */
+label.check-box-label #ckbox_1:checked + span {
+    background-color:rgba(255, 208, 0, 0.6);
+}
+
+/* DESIGN THE 2ND NODE */
+/* #second-switch > label.check-box-label {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+
+#second-switch > .check-box-label > span {
+    display: inline-block;
+    height: 36px;
+    width: 36px;
+    background-color: rgba(118, 110, 110, 0.64);
+    position: absolute;
+    right: calc(100% - 36px - 2px);
+    top: calc(100% - 36px - 1px);
+    border-radius: 50%;
+    /* box-shadow: 1.2px 1.1px 1px rgba(0, 0, 0, 0.15);
+    transition: right 500ms ease, background-color 500ms ease;
+}
+
+#second-switch > #ckbox_2:checked + label.check-box-label {
+    border: 2px solid rgba(27, 181, 61, 0.73);
+} */

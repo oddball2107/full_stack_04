@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cool-btn {
+    color: rgb(255, 255, 255, 0.9);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 165px;
+    height: 55px;
+    line-height: 55px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.btn-css-orange .cool-btn {
+    background-color: rgba(255, 112, 18, 1);
+}
+.btn-css-cyan .cool-btn {
+    background-color: rgba(0, 178, 213, 1);
+}
+.btn-css-black-arrow-before .cool-btn {
+    border: 3px solid rgba(80, 80, 80, 1);
+    background-color: rgba(115, 116, 120, 1);
+}
+.cool-btn:hover {
+    cursor: pointer;
+}
+
+.cool-btn span:first-child {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 19%;
+    letter-spacing: 1px;
+}
+
+.cool-btn span:last-child {
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    line-height: 46px;
+    font-size: 37px;
+}
+/* OVERRIDE CSS for BLACK BUTTON CSS WITH ARROW BEFORE THE WORDS */
+.btn-css-black-arrow-before .cool-btn span:first-child {
+    left: auto;
+    right: 17%;
+}
+.btn-css-black-arrow-before .cool-btn span:last-child {
+    background-color: transparent;
+    right: auto;
+    left: 3px;
+    top: 0px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .tabs {
+            width: 70%;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+            transition: background-color 0.85s, transform 10s;
+        }
+        .tabs .tabs-header {
+            background-color: rgba(116, 180, 246, 0.8);
+            box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.5);
+            border-bottom: 1px solid rgba(0,0,0,0.3);
+        }
+        .tabs .tabs-header label {
+            padding: 1px 10px;
+
+        }
+        .tabs .tabs-header label:hover {
+            background-color: rgba(13, 53, 81, 0.28);
+            cursor: pointer;
+        }
+
+        .tabs .tabs-content .tab {
+            margin-top: 10px;
+        }
+        .tabs .tabs-content .tab div {
+            font-size: 12px;
+        }
+        .tabs .tabs-content .tab div, .input-rad {
+            display:none;
+        }
+        .tabs-content .input-rad:checked + div {
+            display: block;
+        }
+    </style>
+    <title>Tab</title>
+</head>
+<body>
+    <div class="tabs">
+        <div class="tabs-header">
+            <label for="tab1">London</label>
+            <label for="tab2">Paris</label>
+            <label for="tab3">Tokyo</label>
+        </div>
+        <div class="tabs-content">
+            <div class="tab">
+                <input type="radio" name="tab" id="tab1" class="input-rad" checked>
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat doloremque dolor reiciendis atque facere libero corrupti aliquid dolore quam unde nemo, sapiente aperiam, veritatis, fuga neque quaerat laborum impedit necessitatibus!
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="tab" id="tab2" class="input-rad">
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur id dolor eius accusantium nisi dolores enim, sequi ab ducimus deserunt adipisci velit sed necessitatibus atque repellat corporis eligendi numquam qui?
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="tab" id="tab3" class="input-rad">
+                <div>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui iste rem a cupiditate sequi, eos soluta id quidem dicta aspernatur incidunt voluptates, vero, similique error eaque culpa aperiam laborum vitae!
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
